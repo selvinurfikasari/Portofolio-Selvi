@@ -1,0 +1,162 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  /* Reset and base styles */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-top: 50px;
+        }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e6c72, #2a9845);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+table {
+    color: aliceblue;
+    border: #1e6c72;
+}
+
+  
+  nav {
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 3rem;
+  }
+
+  nav li {
+    cursor: pointer;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #cfd8dc;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+    border-bottom: 3px solid transparent;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: #81d4fa;
+    border-color: #81d4fa;
+  }
+
+  main {
+    margin: 7rem auto 2rem;
+    padding: 0 1rem;
+    max-width: 800px;
+    flex-grow: 1;
+  }
+
+  section {
+    display: none;
+    animation: fadeIn 0.6s ease forwards;
+  }
+
+  section.active {
+    display: block;
+  }
+
+  section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-left: 6px solid #81d4fa;
+    padding-left: 1rem;
+    color: #81d4fa;
+  }
+
+  .icon-instagram:hover {
+    color: #e1306c;
+  }
+  .icon-tiktok:hover {
+    color: #140107;
+
+  }
+  .social-icons {
+    display: flex;
+    gap: 40px;
+  }
+        .contact-info {
+            margin: 20px 0;
+            color: blue;
+        }
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+        }
+.Home section{
+    padding-top: 55px;
+    
+}
+  
+li {
+  font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+p{ 
+  font-weight: 500;
+    font-size: 2rem;
+    font-style: oblique;
+}
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: rgba(0,0,0,0.6);
+    color: #b0bec5;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    main {
+      margin: 6rem 1rem 2rem;
+      padding: 0;
+    }
+    nav ul {
+      gap: 2rem;
+    }
+  }

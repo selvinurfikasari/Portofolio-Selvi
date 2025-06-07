@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portofolio</title>
+<link rel="stylesheet" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+<body> 
+
+<nav>
+  <ul>
+    <li><a href="#Home" data-target="Home">Home</a></li>
+    <li><a href="#Tentang saya" data-target="Tentang saya">Tentang saya</a></li>
+    <li><a href="#Skill" data-target="Skill">Skill</a></li>
+    <li><a href="#Contact" data-target="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="Home" class="active" tabindex="0" aria-label="Home section">
+    <h2>Frofile</h2>
+    <table style="white-space: 0px;margin-right: 0px;"></table>
+    <img class="bulat" src="silvi.jpg" alt="">
+    <h1>SELVI NURFIKASARI</h1>
+    </div>
+  </section>
+
+<section id="Tentang saya" tabindex="0" aria-label="Tentang saya section">
+  <h2>Tentang Saya</h2>
+  <p>Saya Selvi Nurfikasari, Mahasiswa sistem informasi di Fakultas Ilmu Komputer Dan Teknologi Informasi Universitas Muhammadiyah Sumatra Utara </p>
+<br>
+<h2>Biodata:</h2>
+<table style="font-size: 30px; font-weight: 30px;">
+    <tr>
+       <td>Nama</td>
+        <td>:</td>
+        <td>Selvi Nurikasari</td>
+    </tr>
+    <tr>
+        <td>Tanggal Lahir</td>
+        <td>:</td>
+        <td>21 Maret 2005</td>
+    </tr>
+    <tr>
+        <td>Agama</td>
+        <td>:</td>
+        <td>Islam</td>
+    </tr>
+    <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td>Rantau Prapat</td>
+    </tr>
+    <tr>
+        <td>Hobby</td>
+        <td>:</td>
+        <td>Bulu Tangkis</td>
+    </tr>
+    <tr>
+        <td>Moto Hidup</td>
+        <td>:</td>
+        <td>Selalu berusaha menjadi manusia yang bermanfaat bagi orang banyak</td>
+    </tr>
+</table>
+
+</section>
+  
+  <section id="Skill" tabindex="0" aria-label="Skill section">
+    <header>
+        <h2 >Skill</h2>
+    </header>
+    <div class="Skill">
+
+    </div>
+    <ul>
+        <li>Java 80%</li>
+        <li>Python 70 %</li>
+        <li>Php MyAdmin 90%</li>
+        </ul>
+        
+  </section>
+
+
+
+  <section id="contact" tabindex="0" aria-label="Contact section">
+    <h2>Contact</h2>
+    <div style="color: azure;" class="contact-info">
+        <p>Email: <a href="mailto:slvinrfk05@gmail.com">slvinrfk05@gmail.com</a></p>
+        <p>Telepon: <a href="tel:+62 82162007977"> +62 82162007977</a></p>
+    </div>
+
+    <div class="social-media">
+      <br>
+        <p ><b>Media Sosial:</b> </p>
+    <a style="font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-left:;
+    padding-left: 1rem;"
+      href="https://www.instagram.com/slvinrfkasari_?igsh=MWx2eGRlbHFyeWxkbQ=="
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+      class="icon-container icon-instagram"
+    >
+      <i class="fab fa-instagram"></i>
+      <span class="icon-label">Instagram</span>
+    </a>
+    <a style="font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-left;
+    padding-left: 1rem;"
+    href="https://www.tiktok.com/@www.sil_?_t=ZS-8wwopLYI9Pm&_r=1"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="tiktok"
+      class="icon-container icon-tiktok">
+     <i class="fab fa-tiktok"></i>
+     <span class="icon-label">Tik Tok</span>
+    </a>
+
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Selvi Nurfikasari. All rights reserved.
+</footer>
+
+<script>
+  // Grab all nav links and sections
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('main section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const targetId = link.getAttribute('data-target');
+
+      // Remove active from all nav links
+      navLinks.forEach(l => l.classList.remove('active'));
+
+      // Hide all sections
+      sections.forEach(section => section.classList.remove('active'));
+
+      // Add active to clicked nav and to corresponding section
+      link.classList.add('active');
+      document.getElementById(targetId).classList.add('active');
+
+      // Move focus for accessibility
+      document.getElementById(targetId).focus();
+    });
+  });
+</script>
+
+</body>
+</html>
+
